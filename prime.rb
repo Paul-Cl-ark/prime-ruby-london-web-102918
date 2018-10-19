@@ -1,9 +1,8 @@
 def prime?(integer)
   if integer >= 2
     (2...integer).each {|i| integer % i != 0}
-    true
   else false
-end
+  end
 end
 
 =begin

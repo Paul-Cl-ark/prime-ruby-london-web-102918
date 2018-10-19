@@ -1,8 +1,5 @@
 def prime?(integer)
-  if integer >= 2
-    (2...integer).all? {|i| integer % i != 0}
-  else false
-  end
+  integer >= 2 ? (2...integer).all? {|i| integer % i != 0} : false
 end
 
 =begin

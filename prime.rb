@@ -1,12 +1,11 @@
-=begin def prime?(integer)
-  array = (2..integer -1).to_a
-  array.each do |i|
-  if integer % i == 0
-  return false
+def prime?(integer)
+  if integer >= 2
+    (2..integer -1).each { |i| integer % i != 0}
   end
-  end
-  true
+  else true
 end
+
+=begin
 
 def prime?(integer)
   if integer >= 2 
@@ -17,8 +16,6 @@ def prime?(integer)
   end
 end
 
-=end 
-
 def prime?(num)
   if num >= 2
     (2...num).all? do |x|
@@ -28,3 +25,5 @@ def prime?(num)
     return false
   end
 end
+
+=end

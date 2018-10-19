@@ -12,7 +12,7 @@ end
 
 def prime?(integer)
   if integer >= 2 
-      (2..integer - 1).all? { |i| integer % i != 0 }
+      (2..integer - 1).each { |i| integer % i != 0 }
       true
   else 
     false

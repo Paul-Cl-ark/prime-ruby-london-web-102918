@@ -13,6 +13,6 @@ end
 def prime?(integer)
     if integer >= 2 
       (2..integer - 1).each { |i| return false if (integer % i == 0) }
-    end
   else true
+  end
 end
